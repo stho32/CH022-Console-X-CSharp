@@ -5,7 +5,7 @@ Eine Challenge aus https://github.com/stho32/Collection-Of-Challenges
 ## Anforderungen
 
 - [ ] (A001) Der Scanner enthält Definitionen für 
-  - [ ] Token, die aus einem Set von Zeichen bestehen können, z.B. Whitespaces (Space, Tab, ...)
+  - [X] Token, die aus einem Set von Zeichen bestehen können, z.B. Whitespaces (Space, Tab, ...)
   - [ ] Token, die Begrenzer haben, z.B. "/*" -> "*/" als Kommentar
   - [ ] Token, die mit optionalen Zeichen beginnen können, gefolgt von einem validen Set, z.B. Zahlen (+/- dann 0123456789.)
   - [ ] ggf. mehr

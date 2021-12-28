@@ -15,4 +15,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\code2json.BL\code2json.BL.csproj" />
+    <ProjectReference Include="..\code2json.Interfaces\code2json.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>
