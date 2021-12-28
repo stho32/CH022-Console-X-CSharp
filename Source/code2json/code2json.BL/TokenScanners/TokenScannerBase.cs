@@ -12,4 +12,9 @@ public abstract class TokenScannerBase : ITokenScanner
     }
     
     public abstract IToken? GetToken(string content, ref int position);
+
+    protected bool PeekingFromEquals(string content, int position, string expectedContent)
+    {
+        return content.Substring(position, expectedContent.Length) == expectedContent;
+    }
 }
