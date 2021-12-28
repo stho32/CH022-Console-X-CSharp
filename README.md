@@ -10,7 +10,7 @@ Eine Challenge aus https://github.com/stho32/Collection-Of-Challenges
   - [X] Token, die mit optionalen Zeichen beginnen können, gefolgt von einem validen Set, z.B. Zahlen (+/- dann 0123456789.)
   - [..] ggf. mehr
 - [ ] (A002) Der Scanner hat interne Vordefinitionen für folgende Sprachen:
-  - [ ] (A003) C#
+  - [X] (A003) C#
   - [ ] (A004) T-SQL
 - [ ] (A005) Das Ausgabeformat des Scanners ist JSON.
 - [ ] (A006) Es gibt die Möglichkeit einige Regeln zu konfigurieren, die Token mit weiteren Meta-Informationen annotieren

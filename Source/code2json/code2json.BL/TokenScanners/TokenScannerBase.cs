@@ -15,6 +15,12 @@ public abstract class TokenScannerBase : ITokenScanner
 
     protected bool PeekingFromEquals(string content, int position, string expectedContent)
     {
+        if (position > content.Length-1)
+            return false;
+
+        if (position + expectedContent.Length > content.Length)
+            return false;
+        
         return content.Substring(position, expectedContent.Length) == expectedContent;
     }
 }

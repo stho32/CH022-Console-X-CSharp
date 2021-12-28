@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using code2json.Interfaces;
 
 namespace code2json.BL.TokenScanners;
@@ -12,7 +13,9 @@ public class CollectionOfValidCharsTokenScanner : TokenScannerBase
         _validCharacters = validCharacters;
     }
     
-    public override IToken? GetToken(string content, ref int position)
+    public override IToken? GetToken(
+        string content, 
+        ref int position)
     {
         if (_validCharacters.Contains(content[position]))
         {

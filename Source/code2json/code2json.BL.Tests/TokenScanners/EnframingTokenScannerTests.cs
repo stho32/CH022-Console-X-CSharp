@@ -8,7 +8,13 @@ public class EnframingTokenScannerTests
 {
     private ITokenScanner GetTokenScanner(bool putStartAndEndIntoTheResult = false)
     {
-        return new EnframingTokenScanner("Comment", "/*", "*/", putStartAndEndIntoTheResult);
+        return new EnframingTokenScanner(
+            "Comment", 
+            "/*", 
+            "*/", 
+            string.Empty,
+            string.Empty,
+            putStartAndEndIntoTheResult);
     }
     
     [Fact]

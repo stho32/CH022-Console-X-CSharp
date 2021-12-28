@@ -2,5 +2,5 @@ namespace code2json.Interfaces;
 
 public interface IScanner
 {
-    IToken[] GetTokens(string code);
+    IFileTokens ScanCode(string code, string filePath = "");
 }

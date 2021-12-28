@@ -12,4 +12,9 @@ public class Token : IToken
         TypeName = typeName;
         Content = content;
     }
+
+    public override string ToString()
+    {
+        return $"{nameof(TypeName)}: {TypeName}, {nameof(Content)}: {Content}";
+    }
 }
