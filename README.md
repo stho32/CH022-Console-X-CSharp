@@ -7,8 +7,8 @@ Eine Challenge aus https://github.com/stho32/Collection-Of-Challenges
 - [ ] (A001) Der Scanner enthält Definitionen für 
   - [X] Token, die aus einem Set von Zeichen bestehen können, z.B. Whitespaces (Space, Tab, ...)
   - [X] Token, die Begrenzer haben, z.B. "/*" -> "*/" als Kommentar
-  - [ ] Token, die mit optionalen Zeichen beginnen können, gefolgt von einem validen Set, z.B. Zahlen (+/- dann 0123456789.)
-  - [ ] ggf. mehr
+  - [X] Token, die mit optionalen Zeichen beginnen können, gefolgt von einem validen Set, z.B. Zahlen (+/- dann 0123456789.)
+  - [..] ggf. mehr
 - [ ] (A002) Der Scanner hat interne Vordefinitionen für folgende Sprachen:
   - [ ] (A003) C#
   - [ ] (A004) T-SQL
