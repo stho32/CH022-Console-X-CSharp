@@ -18,7 +18,8 @@ public class TSqlScanner : ScannerBase
             new CollectionOfValidCharsTokenScanner("operator", "+-*/=|&!<>"),
             new CollectionOfValidCharsTokenScanner("comma", ","),
             new EnframingTokenScanner("single quoted string", "'", "'", string.Empty, "''", true)
-        })
+        },
+        "*.sql")
     {
     }
 }

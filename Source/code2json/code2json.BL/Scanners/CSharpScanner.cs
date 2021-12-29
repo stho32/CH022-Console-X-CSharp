@@ -28,7 +28,8 @@ public class CSharpScanner : ScannerBase
             new CollectionOfValidCharsTokenScanner("question mark", "?"),
             new CollectionOfValidCharsTokenScanner("double point", ":"),
             new CollectionOfValidCharsButDifferentStartTokenScanner("number", "+-0123456789.", "0123456789.")
-        })
+        },
+        "*.cs")
     {
     }
 }

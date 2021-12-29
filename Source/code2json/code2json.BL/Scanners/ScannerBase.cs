@@ -5,10 +5,12 @@ namespace code2json.BL.Scanners;
 public abstract class ScannerBase : IScanner
 {
     protected readonly ITokenScanner[] _tokenScanners;
+    private readonly string _fileFilter;
 
-    protected ScannerBase(ITokenScanner[] tokenScanners)
+    protected ScannerBase(ITokenScanner[] tokenScanners, string fileFilter)
     {
         _tokenScanners = tokenScanners;
+        _fileFilter = fileFilter;
     }
 
     private IToken[] GetTokens(string code, string filePath)
@@ -57,5 +59,18 @@ public abstract class ScannerBase : IScanner
             filePath,
             tokens
         );
+    }
+
+    public IFileTokens[] ScanDirectory(string path)
+    {
+        var files = Directory.GetFiles(path, _fileFilter, SearchOption.AllDirectories);
+        var result = new List<IFileTokens>();
+        
+        foreach (var file in files)
+        {
+            result.Add(ScanCode(File.ReadAllText(file), file));
+        }
+
+        return result.ToArray();
     }
 }
