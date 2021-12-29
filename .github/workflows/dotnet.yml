@@ -9,11 +9,9 @@ env:
   DOTNET_VERSION: '6.0.x' # The .NET SDK version to use
   SOLUTION_DIR: 'code2json'
   PROJECT: './code2json.Console/code2json.Console.csproj' # the project to publish
-  RELEASEPREFIX: 'code2json'
 
 jobs:
   build:
-
     name: build-${{matrix.os}}
     runs-on: ${{ matrix.os }}
     strategy:
