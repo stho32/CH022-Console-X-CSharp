@@ -13,7 +13,7 @@ Eine Challenge aus https://github.com/stho32/Collection-Of-Challenges
   - [X] (A003) C#
   - [X] (A004) T-SQL
 
-- [ ] (A005) Das Ausgabeformat des Scanners ist JSON.
+- [X] (A005) Das Ausgabeformat des Scanners ist JSON.
 
 - [ ] (A006) Es gibt die Möglichkeit einige Regeln zu konfigurieren, die Token mit weiteren Meta-Informationen annotieren
   - [ ] (A007) Es gibt eine Regel, die alle Bezeichnungen nach FROM, INSERT INTO und UPDATE als Tabellen-Namen identifiziert
@@ -25,6 +25,9 @@ Eine Challenge aus https://github.com/stho32/Collection-Of-Challenges
   - [ ] (A011) Welche Dateien beinhalten Referenzen auf die Tabelle "HelloWorld"
   - [ ] (A012) Welche Stored-Procedures gibt es?
   - [ ] (A013) Welche Stored-Procedures beinhalten Referenzen auf die Tabelle "HelloWorld"
+  - [ ] (A014) Welche Klassen sind deaklariert?
+  - [ ] (A015) Von welchen Klassen und Schnittstellen sind die Klassen abgeleitet (nur 1 Stufe tief, also die unmittelbaren Vorgänger)
+  - [ ] (A016) Von welchen Klassen und Schnittstellen sind die Klassen abgeleitet, wenn man die Hierarchie auflöst, d.h. wenn z.B. Scanner von ScannerBase abgeleitet ist und die Schnittstelle IScanner implementiert, dann soll bei Scanner das Interface IScanner als Vorfahre angezeigt werden.
 
 Beispieldateien sind anbei.
 
