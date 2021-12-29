@@ -2,6 +2,8 @@
 
 Eine Challenge aus https://github.com/stho32/Collection-Of-Challenges
 
+[![build](https://github.com/stho32/CH022-Console-X-CSharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/stho32/CH022-Console-X-CSharp/actions/workflows/dotnet.yml)
+
 ## Anforderungen
 
 - [X] (A001) Der Scanner enthält Definitionen für 
