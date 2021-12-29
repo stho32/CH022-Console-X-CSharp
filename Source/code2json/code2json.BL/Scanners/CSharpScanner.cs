@@ -8,11 +8,11 @@ public class CSharpScanner : ScannerBase
     public CSharpScanner() : base(
         new ITokenScanner[]
         {
-            new EnframingTokenScanner("multiline comment", "/*", "*/", "", null,true),
-            new EnframingTokenScanner("single line comment", "//", "\n", "", null, true),
+            new EnframingTokenScanner("multiline comment", "/*", "*/", "", string.Empty,true),
+            new EnframingTokenScanner("single line comment", "//", "\n", "", string.Empty, true),
             new EnframingTokenScanner("double quoted string", "\"", "\"", "\\", "\\\\", true),
             new EnframingTokenScanner("character string", "'", "'", "\\", "\\\\", true),
-            new EnframingTokenScanner("verbatim double quoted string", "@\"", "\"", null, "\"\"",true),
+            new EnframingTokenScanner("verbatim double quoted string", "@\"", "\"", string.Empty, "\"\"",true),
             new EnframingTokenScanner("interpolated double quoted string", "$\"", "\"", "\\", "\"\"",true),
             new CollectionOfValidCharsTokenScanner("whitespace", " \t\r\n"),
             new CollectionOfValidCharsButDifferentStartTokenScanner("word", "qwertzuiopasdfghjklyxcvbnm_QWERTZUIOPASDFGHJKLYXCVBNM", "qwertzuiopasdfghjklyxcvbnm_QWERTZUIOPASDFGHJKLYXCVBNM.?[]1234567890"),
