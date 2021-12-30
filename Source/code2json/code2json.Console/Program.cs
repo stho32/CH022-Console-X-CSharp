@@ -3,7 +3,6 @@
  *             thus enabling code quality checks using powershell scripting
  */
 
-using System.Diagnostics;
 using System.Text.Json;
 using code2json.BL.Scanners;
 using code2json.Interfaces;
